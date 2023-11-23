@@ -27,7 +27,18 @@ To run the game, ensure you have Python installed on your machine. Execute the s
 ## Customization
 
 - **Player Symbols**: The default symbols are 'X' and 'O', but you can customize them.
+```Python
+self.player1 = "X"
+self.player2 = "O"
+```
 - **Player Colors**: Customize player colors for a personalized touch.
+
+```Python
+self.player1_color = "#6E66fA"
+self.player2_color = "#FA6678"
+self.draw_color = "#7D7D7D"
+self.win_color = "#52FA87"
+```
 
 Feel free to explore the code and adapt it to your preferences. Enjoy playing Tic Tac Toe with friends or use it as a starting point for your Tkinter-based game projects!
 
