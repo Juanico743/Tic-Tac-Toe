@@ -32,7 +32,7 @@ self.player1 = "X"
 self.player2 = "O"
 ```
 - **Player Colors**: Customize player colors for a personalized touch.
-
+  You can choose a color by visiting this website: `https://g.co/kgs/RYqC8L`
 ```Python
 self.player1_color = "#6E66fA"
 self.player2_color = "#FA6678"
