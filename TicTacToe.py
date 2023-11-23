@@ -221,7 +221,7 @@ class Application(tk.Frame):
             self.buttons[8].config(background=self.win_color, disabledforeground="#000000")
             self.winner()
 
-        elif self.buttons[2].cget("text") == self.buttons[4].cget("text") == self.buttons[6].cget("text"):
+        if self.buttons[2].cget("text") == self.buttons[4].cget("text") == self.buttons[6].cget("text"):
             self.buttons[2].config(background=self.win_color, disabledforeground="#000000")
             self.buttons[4].config(background=self.win_color, disabledforeground="#000000")
             self.buttons[6].config(background=self.win_color, disabledforeground="#000000")
