@@ -144,14 +144,17 @@ class Application(tk.Frame):
             self.start_restart_next.config(text="RESTART")
             self.move.config(text="X", fg=self.player1_color)
         elif self.start_restart_next["text"] == "RESTART":
-            self.round = 1
-            self.game = 1
-            self.occupied = []
-            self.player1_Score = 0
-            self.player2_Score = 0
-            self.scoreBoard.config(text="0  -  0")
-            for i in range(9):
-                self.buttons[i].config(bg="#FFFFFF", text=str(i), fg="#FFFFFF", disabledforeground="#FFFFFF")
+            restartResult = messagebox.askyesno("Restart", "Note: When Restart, the Score will be lost.",
+                                                icon="question", default='yes')
+            if restartResult:
+                self.round = 1
+                self.game = 1
+                self.occupied = []
+                self.player1_Score = 0
+                self.player2_Score = 0
+                self.scoreBoard.config(text="0  -  0")
+                for i in range(9):
+                    self.buttons[i].config(bg="#FFFFFF", text=str(i), fg="#FFFFFF", disabledforeground="#FFFFFF")
         elif self.start_restart_next["text"] == "NEXT":
             self.win = False
             self.draw = False
@@ -254,8 +257,8 @@ class Application(tk.Frame):
         self.move.config(text="🗿🗿", fg=self.draw_color)
 
     def quit(self):
-        result = messagebox.askyesno("Question", "Do you want Leave?")
-        if result:
+        quitResult = messagebox.askyesno("Quit", "Do you want Leave?", icon="question", default='yes')
+        if quitResult:
             self.master.quit()
         # self.master.destroy()
 
