@@ -32,9 +32,9 @@ self.player1 = "X"
 self.player2 = "O"
 ```
 - **Player Colors**: Customize player colors for a personalized touch.
-  You can choose a color by visiting this website: `https://g.co/kgs/RYqC8L`
+  You can choose a color by visiting this link: `https://g.co/kgs/RYqC8L`
 ```Python
-self.player1_color = "#6E66fA"
+self.player1_color = "#6E66FA"
 self.player2_color = "#FA6678"
 self.draw_color = "#7D7D7D"
 self.win_color = "#52FA87"
