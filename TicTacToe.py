@@ -61,7 +61,6 @@ class Application(tk.Frame):
                         fg="#FFFFFF")
         name.grid(row=1, column=1, sticky="nsew")
 
-        tittle.grid_rowconfigure(0, weight=1)
         tittle.grid_columnconfigure(0, weight=1)
         tittle.grid_columnconfigure(1, weight=1)
 
