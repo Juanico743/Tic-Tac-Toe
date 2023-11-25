@@ -109,7 +109,7 @@ class Application(tk.Frame):
         sidebar = tk.Frame(self, bg="#FFFFFF", )
         sidebar.grid(row=1, column=1, sticky="nsew")
 
-        self.move = tk.Label(sidebar, text="🪐", bg="#FFFFFF", height=1, font=("Berlin Sans FB Demi", 70), fg="#000000")
+        self.move = tk.Label(sidebar, text="🃏", bg="#FFFFFF", height=1, font=("Berlin Sans FB Demi", 70), fg="Red")
         self.move.grid(row=1, column=0, columnspan=3, sticky="ew")
 
         self.scoreBoard = tk.Label(sidebar, text=f"{self.player1_Score:^3} - {self.player2_Score:^3}", bg="#FFFFFF",
