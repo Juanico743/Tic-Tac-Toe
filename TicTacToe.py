@@ -25,7 +25,7 @@ class Application(tk.Frame):
         self.game = 1
         self.player1_color = "#6E66fA"
         self.player2_color = "#FA6678"
-        self.draw_color = "#7D7D7D"
+        self.draw_color = "#59C8FF"
         self.win_color = "#52FA87"
         self.player1 = "X"
         self.player2 = "O"
@@ -109,7 +109,7 @@ class Application(tk.Frame):
         sidebar = tk.Frame(self, bg="#FFFFFF", )
         sidebar.grid(row=1, column=1, sticky="nsew")
 
-        self.move = tk.Label(sidebar, text="🃏", bg="#FFFFFF", height=1, font=("Berlin Sans FB Demi", 70), fg="Red")
+        self.move = tk.Label(sidebar, text="🃏 🎴", bg="#FFFFFF", height=1, font=("Berlin Sans FB Demi", 70), fg="Red")
         self.move.grid(row=1, column=0, columnspan=3, sticky="ew")
 
         self.scoreBoard = tk.Label(sidebar, text=f"{self.player1_Score:^3} - {self.player2_Score:^3}", bg="#FFFFFF",
@@ -253,7 +253,7 @@ class Application(tk.Frame):
         for i in range(9):
             self.buttons[i].config(state="disabled")
         self.start_restart_next.config(text="NEXT")
-        self.move.config(text="🗿🗿", fg=self.draw_color)
+        self.move.config(text="🧪🧪", fg=self.draw_color)
 
     def quit(self):
         quitResult = messagebox.askyesno("Quit", "Do you want Leave?", icon="question", default='yes')
